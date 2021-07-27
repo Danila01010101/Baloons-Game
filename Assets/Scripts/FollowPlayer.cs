@@ -1,19 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.AI;
 using UnityEngine;
+using System.Collections;
 
 public class FollowPlayer : MonoBehaviour
 {
     [SerializeField]
     private float _ballSpeed = 100;
-    
+
     private GameObject _objectToFollow;
 
     private Rigidbody _rigidbody;
 
     private Vector3 _direction;
     private Vector3 _playerRotation;
-    private Vector3 _randomisedDirection;
 
     private void OnEnable()
     {
@@ -34,7 +33,7 @@ public class FollowPlayer : MonoBehaviour
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
-        _ballSpeed += Random.Range(-5,5);
+        _ballSpeed = _ballSpeed + Random.Range(-30, 30);
     }
 
     private void FixedUpdate()
@@ -55,4 +54,5 @@ public class FollowPlayer : MonoBehaviour
     {
         return _objectToFollow;
     }
+
 }

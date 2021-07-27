@@ -8,6 +8,6 @@ public class Rotation : MonoBehaviour
     private float _rotationSpeed = 1;
     void Update()
     {
-        transform.Rotate(-  Vector3.up, 1 * _rotationSpeed);
+        transform.Rotate(-Vector3.up, 1 * _rotationSpeed);
     }
 }

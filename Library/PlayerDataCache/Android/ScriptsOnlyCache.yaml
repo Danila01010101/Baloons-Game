@@ -1,25 +1,22 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - BallBehavior
-    - BallCounter
-    - BallDetector
     - BallFinder
-    - Button
+    - DecreaseScoreOnTrigger
+    - DestroyOnCollision
     - FallThrough
     - FollowPlayer
+    - IncreaseScoreOnTrigger
+    - MultiplyScoreOnTrigger
+    - OpenGateOnCollisions
     - PathCreation.Examples.PathFollower
     - PathCreation.Examples.RoadMeshCreator
     - PlayerMovement
-    - Rotation
     - ScoreCounter
     - ScoreViewUI
-    - SideMovement
-    - WallHealthViewer
     PathCreator.dll:
+    - PathCreation.GlobalDisplaySettings
     - PathCreation.PathCreator
-    Unity.ProBuilder.dll:
-    - UnityEngine.ProBuilder.ProBuilderMesh
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -79,8 +76,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1764}
     - Class: 114
-      Script: {instanceID: 1768}
-    - Class: 114
       Script: {instanceID: 2006}
     - Class: 114
       Script: {instanceID: 2014}
@@ -93,37 +88,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2436}
     - Class: 114
-      Script: {instanceID: 2442}
+      Script: {instanceID: 2458}
     - Class: 114
-      Script: {instanceID: 2538}
+      Script: {instanceID: 2540}
     - Class: 114
-      Script: {instanceID: 2542}
+      Script: {instanceID: 2544}
     - Class: 114
-      Script: {instanceID: 2718}
+      Script: {instanceID: 2720}
     - Class: 114
-      Script: {instanceID: 2840}
+      Script: {instanceID: 2842}
     - Class: 114
-      Script: {instanceID: 3044}
+      Script: {instanceID: 2942}
     - Class: 114
-      Script: {instanceID: 3406}
+      Script: {instanceID: 3048}
     - Class: 114
-      Script: {instanceID: 3524}
+      Script: {instanceID: 3412}
     - Class: 114
-      Script: {instanceID: 3602}
+      Script: {instanceID: 3626}
     - Class: 114
-      Script: {instanceID: 3620}
+      Script: {instanceID: 3764}
     - Class: 114
-      Script: {instanceID: 3758}
+      Script: {instanceID: 3810}
     - Class: 114
-      Script: {instanceID: 3916}
+      Script: {instanceID: 4014}
     - Class: 114
-      Script: {instanceID: 4006}
+      Script: {instanceID: 4274}
     - Class: 114
-      Script: {instanceID: 4266}
+      Script: {instanceID: 4338}
     - Class: 114
-      Script: {instanceID: 4330}
-    - Class: 114
-      Script: {instanceID: 4336}
+      Script: {instanceID: 4344}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -134,6 +127,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
+    - Class: 195
+      Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
     - Class: 222
@@ -141,6 +136,10 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 238
+      Script: {instanceID: 0}
+    - Class: 850595691
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -343,6 +342,12 @@ ScriptsOnlyBuild:
     className: Rotation
   - hash:
       serializedVersion: 2
+      Hash: f1bb7915a4fbf30d0a6dc2c6eecac83d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DecreaseScoreOnTrigger
+  - hash:
+      serializedVersion: 2
       Hash: d6a8e9bec3160a152b9b2710593d3caa
     assemblyName: Unity.ProBuilder.dll
     namespaceName: UnityEngine.ProBuilder
@@ -448,7 +453,7 @@ ScriptsOnlyBuild:
       Hash: f1bb7915a4fbf30d0a6dc2c6eecac83d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: BallCounter
+    className: IncreaseScoreOnTrigger
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
@@ -461,6 +466,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.ProBuilder.dll
     namespaceName: UnityEngine.ProBuilder
     className: TriggerBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 2d9d99c928130f4a16c742b102f72c94
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OpenGateOnCollisions
   - hash:
       serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
@@ -478,7 +489,7 @@ ScriptsOnlyBuild:
       Hash: 085d670eaf7a5d3f326f633590922d9f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: BallDetector
+    className: DestroyOnCollision
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -557,6 +568,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Interfaces
   - hash:
       serializedVersion: 2
       Hash: a5781dc71a671b1ad2b38de19f24b71f
@@ -659,6 +676,12 @@ ScriptsOnlyBuild:
     assemblyName: PathCreator.dll
     namespaceName: PathCreation
     className: GlobalDisplaySettings
+  - hash:
+      serializedVersion: 2
+      Hash: f1bb7915a4fbf30d0a6dc2c6eecac83d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MultiplyScoreOnTrigger
   - hash:
       serializedVersion: 2
       Hash: 6980e81ddc615a861309d2d659cc3760

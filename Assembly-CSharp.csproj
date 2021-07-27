@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\DecreaseScoreOnTrigger.cs" />
     <Compile Include="Assets\Scripts\ScoreViewUI.cs" />
     <Compile Include="Assets\Scripts\IncreaseScoreOnTrigger.cs" />
+    <Compile Include="Assets\Scripts\OpenGateOnCollisions.cs" />
     <Compile Include="Assets\Scripts\DestroyOnCollision.cs" />
     <Compile Include="Assets\Scripts\Interfaces.cs" />
     <Compile Include="Assets\Scripts\BallFinder.cs" />
@@ -78,7 +79,8 @@
     <Compile Include="Assets\Scripts\FallThrough.cs" />
     <Compile Include="Assets\PathCreator\Examples\Scripts\RoadMeshCreator.cs" />
     <Compile Include="Assets\Scripts\ScoreCounter.cs" />
-    <Compile Include="Assets\Scripts\OpenGateOnCollisions.cs" />
+    <Compile Include="Assets\Scripts\HorizontalRotation.cs" />
+    <Compile Include="Assets\Scripts\Levitation.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
